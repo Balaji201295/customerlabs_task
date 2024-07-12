@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: #fff;
+}
+
+.popup-wrapper {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+.popup-content {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+.show_popup {
+  transform: translateX(0);
+}
+
+.hide_popup {
+  transform: translateX(100%);
+}
+
+.popup-content {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button,
+input,
+select {
+  outline: none;
+}
