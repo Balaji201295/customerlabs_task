@@ -1,5 +1,5 @@
 import React from "react";
-import SaveSegment from "./SaveSegment";
+import { SaveSegment } from "./components";
 const App = () => (
   <>
     <SaveSegment />

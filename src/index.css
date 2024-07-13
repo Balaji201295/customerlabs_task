@@ -13,9 +13,14 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.25;
   background-color: #fff;
+}
+button,
+input,
+select {
+  outline: none;
 }
 
 .popup-wrapper {
@@ -45,10 +50,4 @@ body {
 .popup-content {
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-button,
-input,
-select {
-  outline: none;
 }
